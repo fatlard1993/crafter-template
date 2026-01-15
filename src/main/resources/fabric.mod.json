@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "crafter-template",
+  "version": "${version}",
+  "name": "Crafter Template",
+  "description": "Makes the Crafter block retain 1 item in each slot, preserving your recipe pattern as a template.",
+  "authors": ["justfatlard"],
+  "contact": {
+    "homepage": "https://github.com/justfatlard/crafter-template",
+    "sources": "https://github.com/justfatlard/crafter-template",
+    "issues": "https://github.com/justfatlard/crafter-template/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["justfatlard.crafter_template.Main"]
+  },
+  "mixins": ["crafter-template.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

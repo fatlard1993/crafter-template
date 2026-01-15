@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "justfatlard.crafter_template.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CrafterBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
