@@ -1,12 +1,13 @@
 package justfatlard.crafter_template.mixin;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.CrafterBlock;
-import net.minecraft.block.entity.CrafterBlockEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.collection.DefaultedList;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.NonNullList;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.CrafterBlock;
+import net.minecraft.world.level.block.LevelEvent;
+import net.minecraft.world.level.block.entity.CrafterBlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -18,16 +19,16 @@ public abstract class CrafterBlockMixin {
 	/**
 	 * Cancel crafting if any non-empty slot has only 1 item.
 	 * This preserves the item as a "template" - crafting only works
-	 * when all recipe slots have at least 2 items.
+	 * when all occupied slots have at least 2 items.
 	 */
-	@Inject(method = "craft", at = @At("HEAD"), cancellable = true)
-	private void preventCraftingWithTemplateOnly(BlockState state, ServerWorld world, BlockPos pos, CallbackInfo ci) {
+	@Inject(method = "dispenseFrom", at = @At("HEAD"), cancellable = true)
+	private void preventCraftingWithTemplateOnly(BlockState state, ServerLevel world, BlockPos pos, CallbackInfo ci) {
 		if (world.getBlockEntity(pos) instanceof CrafterBlockEntity crafter) {
-			DefaultedList<ItemStack> stacks = crafter.getHeldStacks();
+			NonNullList<ItemStack> stacks = crafter.getItems();
 
 			for (ItemStack stack : stacks) {
-				// If any non-empty slot has only 1 item, don't allow crafting
 				if (!stack.isEmpty() && stack.getCount() <= 1) {
+					world.levelEvent(LevelEvent.SOUND_CRAFTER_FAIL, pos, 0);
 					ci.cancel();
 					return;
 				}

@@ -10,6 +10,6 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("[crafter-template] Crafters will now retain 1 item per slot");
+		LOGGER.info("Crafters will now retain 1 item per slot");
 	}
 }
