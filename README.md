@@ -23,14 +23,8 @@ Place your recipe ingredients in the Crafter with **at least 2 of each item**. T
 
 ## Installation
 
-Install alongside its declared dependencies (see `fabric.mod.json`).
-
-Works on both dedicated servers and singleplayer. The mod's behavior is entirely server-side; on dedicated servers, only the server needs the mod installed.
-
-## Requirements
-
-Targets the Minecraft, Fabric Loader, Fabric API, and Java versions declared in this mod's `gradle.properties`; check there for the exact currently-supported version.
+Install server-side alongside its declared dependencies (see `fabric.mod.json`). Vanilla clients need nothing. Version targets live in `gradle.properties` (Minecraft, loader, Fabric API) and `fabric.mod.json` (Java).
 
 ## License
 
-MIT License - see [LICENSE](LICENSE)
+MIT, see [LICENSE](LICENSE).
