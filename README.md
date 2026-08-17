@@ -21,6 +21,16 @@ Place your recipe ingredients in the Crafter with **at least 2 of each item**. T
 - Unstackable items (tools, etc.) always have a count of 1 and will always block crafting.
 - Disabled Crafter slots are unaffected and work normally.
 
+## Learning It
+
+The whole mod is one changed rule and it is invisible: a crafter looks like a crafter, behaves like a crafter, and simply stops one item short. Anyone who does not already know will read that as the crafter being broken, or as their own counting being wrong.
+
+With [block-tip](https://github.com/justfatlard/block-tip) installed, looking at a crafter says so: *"Keeps one of each - the pattern stays"*.
+
+There is nothing to craft and nothing to fetch here, so there is no quest worth writing. The fact just needs saying at the moment somebody is looking at the block.
+
+Optional and guarded: without block-tip the mod behaves exactly as before.
+
 ## Installation
 
 Install server-side alongside its declared dependencies (see `fabric.mod.json`). Vanilla clients need nothing. Version targets live in `gradle.properties` (Minecraft, loader, Fabric API) and `fabric.mod.json` (Java).

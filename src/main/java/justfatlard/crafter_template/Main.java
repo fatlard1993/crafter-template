@@ -10,6 +10,11 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		// Guarded class load: CrafterTipRegistration names block-tip types.
+		if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("block-tip")) {
+			justfatlard.crafter_template.integration.CrafterTipRegistration.register();
+		}
+
 		LOGGER.info("Crafters will now retain 1 item per slot");
 	}
 }
