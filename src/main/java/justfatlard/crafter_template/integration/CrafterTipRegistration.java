@@ -21,6 +21,6 @@ public final class CrafterTipRegistration {
 	private CrafterTipRegistration() {}
 
 	public static void register() {
-		BlockTipApi.line("minecraft:crafter", "Keeps one of each - the pattern stays");
+		BlockTipApi.line("minecraft:crafter", "Keeps a template");
 	}
 }
