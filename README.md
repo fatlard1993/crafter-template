@@ -25,7 +25,7 @@ Place your recipe ingredients in the Crafter with **at least 2 of each item**. T
 
 The whole mod is one changed rule and it is invisible: a crafter looks like a crafter, behaves like a crafter, and simply stops one item short. Anyone who does not already know will read that as the crafter being broken, or as their own counting being wrong.
 
-With [block-tip](https://github.com/justfatlard/block-tip) installed, looking at a crafter says so: *"Keeps a template"*.
+With [block-tip](https://github.com/fatlard1993/block-tip) installed, looking at a crafter says so: *"Keeps a template"*.
 
 It also shows what that particular crafter is for, as a picture of the item its loaded pattern makes. This is only possible because of the rule: the template stays in the grid, so a crafter here always knows what it is for, and a wall of identical crafters stops being a wall of identical crafters.
 
