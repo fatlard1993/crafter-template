@@ -30,9 +30,9 @@
 		"java": ">=25"
 	},
 	"suggests": {
-		"block-tip": ">=1.6.0"
+		"block-tip": ">=1.0.0"
 	},
 	"breaks": {
-		"block-tip": "<1.6.0"
+		"block-tip": "<1.0.0"
 	}
 }
