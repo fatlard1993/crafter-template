@@ -13,7 +13,7 @@
 		"issues": "https://github.com/fatlard1993/crafter-template/issues"
 	},
 	"license": "MIT",
-	"icon": "icon.png",
+	"icon": "assets/crafter-template/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
