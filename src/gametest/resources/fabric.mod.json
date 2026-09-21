@@ -1,0 +1,18 @@
+{
+	"schemaVersion": 1,
+	"id": "crafter-template-gametest",
+	"version": "1.0.0",
+	"name": "Crafter Template smoke test",
+	"description": "Loads the mod, joins a world, and fails if anything on the way threw.",
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"justfatlard.crafter_template.gametest.SmokeTest"
+		]
+	},
+	"depends": {
+		"crafter-template": "*",
+		"fabric-client-gametest-api-v1": "*"
+	}
+}
