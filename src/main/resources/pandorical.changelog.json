@@ -4,14 +4,18 @@
 	],
 	"versions": {
 		"1.1.1": [
-			"The mod menu icon turns up where the loader actually looks for it, and the readme's example names the slots it means."
+			"The mod menu icon turns up where the loader looks for it.",
+			"The readme's example names the slots it means."
 		],
 		"1.1.0": [
-			"Looking at a crafter now says what its template would craft and that it stops one item short. A crafter behaves like a crafter right up until it does, and anyone who does not already know reads that as the block being broken."
+			"Looking at a crafter says what its template would craft, and that it stops one item short.",
+			"A crafter behaves like a crafter right up until it does, which reads as the block being broken."
 		],
 		"1.0.0": [
-			"Load at least two of each ingredient and the Crafter crafts until a slot is down to its last item, then stops with the fail click, leaving the pattern in place.",
-			"The template locks the recipe in, so nothing else gets made by accident, and hoppers can feed it without disturbing it."
+			"Load at least two of each ingredient and the Crafter crafts until a slot is down to its last.",
+			"Then it stops with the fail click, leaving the pattern in place.",
+			"The template locks the recipe in, so nothing else gets made by accident.",
+			"Hoppers can feed it without disturbing it."
 		]
 	}
 }
