@@ -8,7 +8,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"fabric-client-gametest": [
-			"justfatlard.crafter_template.gametest.SmokeTest"
+			"justfatlard.crafter_template.gametest.SmokeTest",
+			"justfatlard.crafter_template.gametest.Showcase"
 		]
 	},
 	"depends": {

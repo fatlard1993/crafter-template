@@ -2,6 +2,8 @@
 
 A Fabric mod that makes the Crafter block retain 1 item in each slot, preserving your recipe pattern as a template.
 
+![A crafter stopped with one plank left in each slot, its stick recipe kept as a template](screenshots/crafter-template-grid.png)
+
 ## How It Works
 
 Place your recipe ingredients in the Crafter with **at least 2 of each item**. The Crafter will craft normally until any slot reaches 1 item, then it stops - preserving that item as a template.
