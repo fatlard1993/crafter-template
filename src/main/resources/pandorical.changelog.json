@@ -3,6 +3,9 @@
 		"Makes the Crafter keep one item in each slot, so your recipe pattern stays loaded as a template instead of being crafted away."
 	],
 	"versions": {
+		"1.1.2": [
+			"Release notes rewritten to read plainly; nothing in play changes."
+		],
 		"1.1.1": [
 			"The mod menu icon loads.",
 			"The readme's example names the slots it means."
