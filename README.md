@@ -33,7 +33,9 @@ It also shows what that particular crafter is for, as a picture of the item its 
 
 There is nothing to craft and nothing to fetch here, so there is no quest worth writing. The fact just needs saying at the moment somebody is looking at the block.
 
-Optional and guarded: without block-tip the mod behaves exactly as before.
+## Installing
+
+Server-side only, and Pandorical is not needed: players connect with an unmodified client. Singleplayer works too.
 
 ## Development
 
