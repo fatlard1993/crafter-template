@@ -3,6 +3,9 @@
 		"Makes the Crafter keep one item in each slot, so your recipe pattern stays loaded as a template instead of being crafted away."
 	],
 	"versions": {
+		"1.1.4": [
+			"Drop changelog notes for changes nothing in the game shows."
+		],
 		"1.1.0": [
 			"Looking at a crafter says what its template would craft, and that it stops one item short.",
 			"A crafter behaves like a crafter right up until it does, which reads as the block being broken."
