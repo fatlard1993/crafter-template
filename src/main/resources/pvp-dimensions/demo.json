@@ -1,0 +1,41 @@
+{
+  "demo": {
+    "name": "Crafter Template",
+    "icon": "minecraft:crafter",
+    "about": [
+      "A crafter here stops crafting when any slot is down to one item, so the last items stay behind as a template of the recipe.",
+      "Place the crafter, put 10 planks in one slot and 5 in the slot below, and pull the lever until it stops: the pattern is still there. Hook up a hopper and a chest to refill it."
+    ]
+  },
+  "pvp_preset": 1,
+  "needs": ["crafter-template"],
+  "preset": {
+    "name": "Crafter Template",
+    "icon": "minecraft:crafter",
+    "pvp": false,
+    "game_mode": "survival",
+    "entry_kit": [
+      {"slot": 0, "item": {"id": "minecraft:crafter", "count": 2}},
+      {"slot": 1, "item": {"id": "minecraft:lever", "count": 2}},
+      {"slot": 2, "item": {"id": "minecraft:stone_button", "count": 2}},
+      {"slot": 3, "item": {"id": "minecraft:oak_planks", "count": 64}},
+      {"slot": 4, "item": {"id": "minecraft:hopper", "count": 4}},
+      {"slot": 5, "item": {"id": "minecraft:chest", "count": 4}},
+      {"slot": 6, "item": {"id": "minecraft:redstone", "count": 16}},
+      {"slot": 7, "item": {"id": "minecraft:crafting_table", "count": 1}},
+      {"slot": 8, "item": {"id": "minecraft:cooked_beef", "count": 8}},
+      {"slot": 9, "item": {"id": "minecraft:oak_log", "count": 32}},
+      {"slot": 10, "item": {"id": "minecraft:cobblestone", "count": 64}},
+      {"slot": 11, "item": {"id": "minecraft:iron_ingot", "count": 16}}
+    ],
+    "respawn_kit": "entry",
+    "goal": "time",
+    "mobs": "off",
+    "life": 15,
+    "size": 2,
+    "world": "overworld",
+    "shape": "flat",
+    "biome": "minecraft:plains",
+    "weather": "clear"
+  }
+}
