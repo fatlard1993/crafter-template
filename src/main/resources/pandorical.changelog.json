@@ -3,6 +3,9 @@
 		"Makes the Crafter keep one item in each slot, so your recipe pattern stays loaded as a template instead of being crafted away."
 	],
 	"versions": {
+		"1.1.5": [
+			"A demo to play in PvP Dimensions' onboarding."
+		],
 		"1.1.4": [
 			"Drop changelog notes for changes nothing in the game shows."
 		],
