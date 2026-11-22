@@ -3,7 +3,7 @@
 	"id": "crafter-template",
 	"version": "${version}",
 	"name": "Crafter Template",
-	"description": "Makes the Crafter block retain 1 item in each slot, preserving your recipe pattern as a template.",
+	"description": "Crafters that keep one item in each slot, so the recipe stays set",
 	"authors": [
 		"justfatlard"
 	],
