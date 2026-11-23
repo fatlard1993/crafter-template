@@ -3,6 +3,9 @@
 		"Makes the Crafter keep one item in each slot, so your recipe pattern stays loaded as a template instead of being crafted away."
 	],
 	"versions": {
+		"1.1.7": [
+			"Describes itself in one short line of what it adds."
+		],
 		"1.1.6": [
 			"Its gametests build Pandorical's test kit as a subproject, as the rest of the suite's do."
 		],
